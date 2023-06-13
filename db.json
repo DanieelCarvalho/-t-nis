@@ -1,0 +1,15 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "categoriesId": 1,
+      "categories2": "ração",
+      "title": "Ração Seca PremieR Pet Golden Formula Carne e Arroz para Cães Adultos de Raças Pequenas",
+      "description1": "Saúde oral: auxilia a redução da formação do tártaro;",
+      "description2": "Pele nutrida e pelagem sedosa: equilíbrio de ômegas e minerais;",
+      "description3": "Redução do odor das fezes: seleção de ingredientes especiais que auxiliam na redução do odor das fezes;",
+      "price": 160,
+      "img": "https://www.petlove.com.br/images/products/261729/product/Ra%C3%A7%C3%A3o_Seca_PremieR_Pet_Golden_Formula_Carne_e_Arroz_para_C%C3%A3es_Adultos_de_Ra%C3%A7as_Pequenas_-_3_Kg_3108193-2.jpg?1662040911"
+    }
+  ]
+}
