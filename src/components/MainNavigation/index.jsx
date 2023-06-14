@@ -19,7 +19,7 @@ export const MainNavigation = () => {
           </li>
         </ul>
       </nav>
-      <figure>
+      <figure className={styles["container-figure"]}>
         <NavLink to="Carrinho">
           <img src={Carrinho} alt="imagem de um carrinho de compra" />
         </NavLink>

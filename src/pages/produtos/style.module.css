@@ -1,3 +1,29 @@
-.container {
-  border: solid red;
+.carousel {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  object-fit: cover;
+}
+.carousel-card {
+  text-align: center;
+  display: flex;
+  object-fit: cover;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.buttons .button {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }

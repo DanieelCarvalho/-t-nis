@@ -3,13 +3,201 @@
     {
       "id": 1,
       "categoriesId": 1,
-      "categories2": "ração",
-      "title": "Ração Seca PremieR Pet Golden Formula Carne e Arroz para Cães Adultos de Raças Pequenas",
-      "description1": "Saúde oral: auxilia a redução da formação do tártaro;",
-      "description2": "Pele nutrida e pelagem sedosa: equilíbrio de ômegas e minerais;",
-      "description3": "Redução do odor das fezes: seleção de ingredientes especiais que auxiliam na redução do odor das fezes;",
-      "price": 160,
-      "img": "https://www.petlove.com.br/images/products/261729/product/Ra%C3%A7%C3%A3o_Seca_PremieR_Pet_Golden_Formula_Carne_e_Arroz_para_C%C3%A3es_Adultos_de_Ra%C3%A7as_Pequenas_-_3_Kg_3108193-2.jpg?1662040911"
+      "categories2": "Tênis",
+      "title": "Tênis adidas Lite Racer 3.0 - Masculino",
+      "description": "Versátil e ultra confortável para a academia, treinos leves de corrida e uso diário.",
+      "price": 299.99,
+      "img": "https://imgcentauro-a.akamaihd.net/600x600/96943362/tenis-adidas-lite-racer-3-0-masculino-img.jpg",
+      "img2": "https://imgcentauro-a.akamaihd.net/600x600/96943362A1/tenis-adidas-lite-racer-3-0-masculino-img.jpg"
+    },
+    {
+      "id": 2,
+      "categoriesId": 1,
+      "categories2": "Tênis",
+      "title": "Tênis Nike Revolution 6 - Masculino",
+      "description": "Saúde oral: auxilia a redução da formação do tártaro;",
+      "price": 349.99,
+      "img": "https://imgcentauro-a.akamaihd.net/900x900/96831431/tenis-nike-revolution-6-masculino-img.jpg",
+      "img2": "https://imgcentauro-a.akamaihd.net/600x600/96831431A1/tenis-nike-revolution-6-masculino-img.jpg"
+    },
+    {
+      "id": 3,
+      "categoriesId": 1,
+      "categories2": "Tênis",
+      "title": "Tênis Nike Court Vision Lo - Masculino",
+      "description": "O cabedal é em couro, a entressola e o solado são emborrachados.Ainda conta com lingueta flexível, palmilha macia e forro com reforço acolchoado.",
+      "price": 400.99,
+      "img": "https://imgcentauro-a.akamaihd.net/900x900/979932QW/tenis-nike-court-vision-lo-masculino-img.jpg",
+      "img2": "https://imgcentauro-a.akamaihd.net/600x600/979932QWA1/tenis-nike-court-vision-lo-masculino-img.jpg"
+    },
+    {
+      "id": 4,
+      "categoriesId": 1,
+      "categories2": "Tênis",
+      "title": "Tênis Asics Gel Excite 8 - Masculino",
+      "description": "Sistema De Amortecimento Em Gel®: Gel Com Base De Silicone, Colocado Em Locais Estratégicos Para Absorção De Impacto.Amplifoam: espuma De Baixa Densidade Para Um Suave Amortecimento.",
+      "price": 299.99,
+      "img": "https://imgcentauro-a.akamaihd.net/600x600/96405962/tenis-asics-gel-excite-8-masculino-img.jpg",
+      "img2": "https://www.centauro.com.br/tenis-asics-gel-excite-8-masculino-964059.html#cor=62&u_gclid=CjwKCAjwyqWkBhBMEiwAp2yUFhoh-6b-WOCPhZEZQ8Pkc3eSsNPYcIFzeoc6AvkkOncmZX7FNGx31hoCbPkQAvD_BwE"
+    },
+    {
+      "id": 5,
+      "categoriesId": 1,
+      "categories2": "Tênis",
+      "title": "Tênis Under Armour Buzzer - Masculino",
+      "description": "Um clássico que move gerações, o Tênis Converse All Star é o queridinho das pessoas descoladas que adoram compor looks criativos e modernos nas diversas ocasiões casuais.",
+      "price": 449.8,
+      "img": "https://imgcentauro-a.akamaihd.net/600x600/97273232/tenis-under-armour-buzzer-masculino-img.jpg",
+      "img2": "https://imgcentauro-a.akamaihd.net/600x600/97273232A1/tenis-under-armour-buzzer-masculino-img.jpg"
+    },
+    {
+      "id": 6,
+      "categoriesId": 1,
+      "categories2": "Tênis",
+      "title": "Tênis Rainha VL 2500 - Masculino",
+      "description": "De estilo retrô repaginado, o Tênis Rainha VL 2500 é a pedida certa para compor looks jovens e esportivos para as diversas atividades do dia a dia.",
+      "price": 120.99,
+      "img": "https://imgcentauro-a.akamaihd.net/900x900/95070345/tenis-rainha-vl-2500-masculino-img.jpg",
+      "img2": "https://imgcentauro-a.akamaihd.net/600x600/95070345A1/tenis-rainha-vl-2500-masculino-img.jpg"
+    },
+    {
+      "id": 7,
+      "categoriesId": 1,
+      "categories2": "Tênis",
+      "title": "Tênis adidas Lite Racer 3.0 - Masculino",
+      "description": "Saúde oral: auxilia a redução da formação do tártaro;",
+      "price": 299.99,
+      "img": "https://imgcentauro-a.akamaihd.net/600x600/96943362/tenis-adidas-lite-racer-3-0-masculino-img.jpg"
+    },
+    {
+      "id": 8,
+      "categoriesId": 1,
+      "categories2": "Tênis",
+      "title": "Tênis adidas Ultraboost 22 - Masculino",
+      "description": "Boost™: Energia Única De Cápsulas Que Apresentam Uma Mágica Combinação De Benefícios Funcionais, Como Maciez, Amortecimento Elástico E Sensação De Liberdade. Independente Da Temperatura, Ela Traz Mais Eficiência E Conforto Na Sua Corrida.",
+      "price": 749.99,
+      "img": "https://imgcentauro-a.akamaihd.net/900x900/973921Y3/tenis-adidas-ultraboost-22-masculino-img.jpg",
+      "img2": "https://imgcentauro-a.akamaihd.net/600x600/973921Y3A1/tenis-adidas-ultraboost-22-masculino-img.jpg"
+    },
+    {
+      "id": 9,
+      "categoriesId": 1,
+      "categories2": "Tênis",
+      "title": "Tênis Fila Float Prime - Masculino",
+      "description": " EverGrip: Composto E Geometria Especiais De Sola Para Melhor Tração Em Terrenos Pesados.",
+      "price": 399.99,
+      "img": "https://imgcentauro-a.akamaihd.net/900x900/975807PD/tenis-fila-float-prime-masculino-img.jpg",
+      "img2": "https://imgcentauro-a.akamaihd.net/600x600/975807PDA1/tenis-fila-float-prime-masculino-img.jpg"
+    },
+    {
+      "id": 10,
+      "categoriesId": 1,
+      "categories2": "Tênis",
+      "title": "Tênis Reserva RSV008C - Masculino",
+      "description": "Na prática esportiva ou no dia a dia, esse tênis Reserva Masculino é a opção ideal. O cabedal (parte superior do calçado) em material resistente oferece durabilidade, apoio e suporte. ",
+      "price": 299.99,
+      "img": "https://imgcentauro-a.akamaihd.net/900x900/962422WL/tenis-reserva-rsv008c-masculino-img.jpg",
+      "img2": "https://imgcentauro-a.akamaihd.net/600x600/962422WLA1/tenis-reserva-rsv008c-masculino-img.jpg"
+    },
+    {
+      "id": 11,
+      "categoriesId": 2,
+      "categories2": "Tênis feminino",
+      "title": "Tênis Nike Revolution 6 - Feminino",
+      "description": " o Tênis Nike Revolution 6 possui cabedal (parte superior do calçado) leve e respirável em mesh (malha de tramas abertas), a maciez e suavidade de uma entressola em espuma que garante uma pisada mais flexível e amortecida, além de solado emborrachado para aderência e durabilidade.",
+      "price": 309.99,
+      "img": "https://imgcentauro-a.akamaihd.net/900x900/968315JU/tenis-nike-revolution-6-feminino-img.jpg",
+      "img2": "https://imgcentauro-a.akamaihd.net/600x600/968315JUA1/tenis-nike-revolution-6-feminino-img.jpg"
+    },
+    {
+      "id": 12,
+      "categoriesId": 2,
+      "categories2": "Tênis feminino",
+      "title": "Tênis adidas Grand Court 2.0 - Feminino",
+      "description": "#",
+      "price": 320,
+      "img": "https://imgcentauro-a.akamaihd.net/600x600/973606C4/tenis-adidas-grand-court-2-0-feminino-img.jpg",
+      "img2": "https://imgcentauro-a.akamaihd.net/600x600/973606C4A1/tenis-adidas-grand-court-2-0-feminino-img.jpg"
+    },
+    {
+      "id": 13,
+      "categoriesId": 2,
+      "categories2": "Tênis feminino",
+      "title": "Tênis Mizuno Cool Ride - Feminino",
+      "description": "O seu cabedal (parte superior do calçado) tem material em mesh (malhas de tramas abertas) garantindo muito mais respirabilidade, a entressola é em EVA e seu solado é emborrachado. A sua lingueta é integrada, a palmilha é removível e macia, além de seu forro ter reforço acolchoado.",
+      "price": 309.99,
+      "img": "https://imgcentauro-a.akamaihd.net/900x900/97009005/tenis-mizuno-cool-ride-feminino-img.jpg",
+      "img2": "https://imgcentauro-a.akamaihd.net/600x600/97009005A1/tenis-mizuno-cool-ride-feminino-img.jpg"
+    },
+    {
+      "id": 14,
+      "categoriesId": 2,
+      "categories2": "Tênis feminino",
+      "title": "Tênis Puma Wired Run BDP- Feminino",
+      "description": "SOFTFOAM: Espuma Macia, Com Efeito Memória Para Maior Conforto.",
+      "price": 250,
+      "img": "https://imgcentauro-a.akamaihd.net/900x900/970807CW/tenis-puma-wired-run-bdp-feminino-img.jpg",
+      "img2": "https://imgcentauro-a.akamaihd.net/600x600/970807CWA1/tenis-puma-wired-run-bdp-feminino-img.jpg"
+    },
+    {
+      "id": 15,
+      "categoriesId": 2,
+      "categories2": "Tênis feminino",
+      "title": "Tênis Olympikus Atmos - Feminino",
+      "description": " O EVA Promove Máxima Maciez E Conforto Absoluto.",
+      "price": 169.88,
+      "img": "https://imgcentauro-a.akamaihd.net/500x500/97486902/tenis-olympikus-atmos-feminino-img.jpg",
+      "img2": "https://imgcentauro-a.akamaihd.net/600x600/97486902A1/tenis-olympikus-atmos-feminino-img.jpg"
+    },
+    {
+      "id": 16,
+      "categoriesId": 2,
+      "categories2": "Tênis feminino",
+      "title": "Tênis Nike Downshifter 12 - Feminino",
+      "description": " O cabedal (parte superior do calçado) tem material sintético e em mesh (malha de tramas abertas), entressola em EVA e solado emborrachado.",
+      "price": 350,
+      "img": "https://imgcentauro-a.akamaihd.net/900x900/973081FP/tenis-nike-downshifter-12-feminino-img.jpg",
+      "img2": "https://imgcentauro-a.akamaihd.net/600x600/973081FPA1/tenis-nike-downshifter-12-feminino-img.jpg"
+    },
+    {
+      "id": 17,
+      "categoriesId": 2,
+      "categories2": "Tênis feminino",
+      "title": "Tênis ASICS Gel-Sparta - Feminino",
+      "description": "Sistema De Amortecimento Em Gel®: Gel Com Base De Silicone, Colocado Em Locais Estratégicos Para Absorção De Impacto.",
+      "price": 350,
+      "img": "https://imgcentauro-a.akamaihd.net/900x900/96920805/tenis-asics-gel-sparta-feminino-img.jpg",
+      "img2": "https://imgcentauro-a.akamaihd.net/600x600/96920805A1/tenis-asics-gel-sparta-feminino-img.jpg"
+    },
+    {
+      "id": 18,
+      "categoriesId": 2,
+      "categories2": "Tênis feminino",
+      "title": "Tênis ASICS Novablast 3 - Feminino",
+      "description": "Com um design incrível e perfeito para suas corridas, o Tênis ASICS Novablast 3 é uma ótima opção. Seu diferencial é a tecnologia no cabedal Engineered Mesh: Uma malha de monofilamento oferece bom conforto e suporte.",
+      "price": 999.99,
+      "img": "https://imgcentauro-a.akamaihd.net/900x900/974890UP/tenis-asics-novablast-3-feminino-img.jpg",
+      "img2": "https://imgcentauro-a.akamaihd.net/600x600/974890UPA1/tenis-asics-novablast-3-feminino-img.jpg"
+    },
+    {
+      "id": 19,
+      "categoriesId": 2,
+      "categories2": "Tênis feminino",
+      "title": "Tênis Asics Japan S Pf - Feminino",
+      "description": " Quem disse que ASICS é só produto para esportes? O tênis Japan S PF tem um design belíssimo para as mulheres que amam sair de casa estilosa com as mais diversas composições.",
+      "price": 499.99,
+      "img": "https://imgcentauro-a.akamaihd.net/600x600/96921238/tenis-asics-japan-s-pf-feminino-img.jpg",
+      "img2": "https://imgcentauro-a.akamaihd.net/600x600/96921238A1/tenis-asics-japan-s-pf-feminino-img.jpg"
+    },
+    {
+      "id": 20,
+      "categoriesId": 2,
+      "categories2": "Tênis feminino",
+      "title": "Tênis Nike Court Vision Alta LTR - Feminino",
+      "description": " O tênis que irá te acompanhar nos mais diversos locais e promover muito estilo a suas composições é o Court Vision Alta LTR.",
+      "price": 649.99,
+      "img": "https://imgcentauro-a.akamaihd.net/900x900/96827331/tenis-nike-court-vision-alta-ltr-feminino-img.jpg",
+      "img2": "https://imgcentauro-a.akamaihd.net/600x600/96827331A1/tenis-nike-court-vision-alta-ltr-feminino-img.jpg"
     }
   ]
 }
