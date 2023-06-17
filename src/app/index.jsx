@@ -14,11 +14,11 @@ function App() {
     {
       path: "/",
       element: <RootLayout />,
-      errorElement: <ErrorPage />,
+      // errorElement: <ErrorPage />,
       children: [
         { path: "/", element: <Home /> },
         { path: "produtos", element: <Produtos /> },
-        { path: "/carrinho", element: <Cart /> },
+        { path: "carrinho", element: <Cart /> },
       ],
     },
   ]);

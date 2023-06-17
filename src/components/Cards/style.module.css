@@ -14,6 +14,7 @@
   align-items: center;
   border: solid 1px;
   border-radius: 16px;
+  background-color: ;
 }
 .container-figure p {
   width: 100%;
@@ -30,6 +31,21 @@
   object-fit: cover;
   border-radius: 16px;
 }
-.container-figure button {
+.button-cart {
+  cursor: pointer;
+  border: none;
+}
+.buttons-quant {
+  width: 100%;
+  height: 100%;
   border: solid;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.buttons-quant p {
+  width: 12vw;
+}
+.buttons-quant img {
+  cursor: pointer;
 }

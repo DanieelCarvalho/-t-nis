@@ -4,11 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite & json-server --watch db.json",
+    "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "start-json-server": "json-server --watch db.json"
+    "json": "json-server --watch db.json"
   },
   "dependencies": {
     "axios": "^1.4.0",
