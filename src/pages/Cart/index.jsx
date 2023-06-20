@@ -1,8 +1,8 @@
-import { Cards } from "../../components/Cards";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import { useContext, useEffect, useState } from "react";
-import CartContext from "../../context";
+import CartContext from "../../context/cartContext";
+import DadosContext from "../../context/dadosContext";
 import styles from "./style.module.css";
 import Menos from "../../assets/minus-thin (1).svg";
 import Mais from "../../assets/plus-thin (1).svg";
@@ -10,7 +10,17 @@ export const Cart = () => {
   const { id } = useParams();
   const [product, setProduct] = useState({});
   const [quant, setQuant] = useState(0);
+  const [total, setTotal] = useState(null);
   const { cart, setCart } = useContext(CartContext);
+  const { dados, setDados } = useContext(DadosContext);
+
+  useEffect(() => {
+    const total = cart.reduce((acc, curr) => {
+      return (acc += curr.quantidade * curr.price);
+    }, 0);
+    setTotal(total.toFixed(2).replace(".", ","));
+    console.log(total, "preco");
+  });
 
   function subProduct(id) {
     cart.forEach((p) => {
@@ -31,6 +41,7 @@ export const Cart = () => {
         setQuant(p.quantidade);
       }
     });
+    console.log(cart, "testeCart");
   }
   return (
     <section className={styles["container"]}>
@@ -45,7 +56,13 @@ export const Cart = () => {
               />
               <div className={styles["box-product-title"]}>
                 <h1>{item.title}</h1>
-                <p>{"R$" + item.price.toFixed(2)}</p>
+                <p>{item.totalprice}</p>
+                <p>
+                  Total: R${" "}
+                  {parseInt(item.price * item.quantidade)
+                    .toFixed(2)
+                    .replace(".", ",")}
+                </p>
               </div>
               <div className={styles["box-buttons"]}>
                 <button
@@ -55,6 +72,7 @@ export const Cart = () => {
                   <img src={Menos} alt="" />
                 </button>
                 <p>{item.quantidade}</p>
+
                 <button
                   className={styles["box-button"]}
                   onClick={() => addProduct(item.id)}
@@ -67,7 +85,7 @@ export const Cart = () => {
           );
         })}
         <div>
-          <h2>Total da compra: R$ {0} </h2>
+          <h2>Total da compra: R$ {total} </h2>
         </div>
       </div>
     </section>

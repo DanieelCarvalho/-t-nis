@@ -5,7 +5,8 @@ import { Produtos } from "../pages/produtos";
 import { RootLayout } from "../components/RootLayout";
 import { ErrorPage } from "../pages/ErrorPage";
 import { Cart } from "../pages/Cart";
-import CartContext from "../context";
+import CartContext from "../context/cartContext";
+import DadosContext from "../context/dadosContext";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -14,7 +15,7 @@ function App() {
     {
       path: "/",
       element: <RootLayout />,
-      // errorElement: <ErrorPage />,
+      errorElement: <ErrorPage />,
       children: [
         { path: "/", element: <Home /> },
         { path: "produtos", element: <Produtos /> },
@@ -24,7 +25,9 @@ function App() {
   ]);
   return (
     <CartContext.Provider value={{ cart, setCart }}>
-      <RouterProvider router={router} />
+      <DadosContext.Provider value={{ dados, setDados }}>
+        <RouterProvider router={router} />
+      </DadosContext.Provider>
     </CartContext.Provider>
   );
 }

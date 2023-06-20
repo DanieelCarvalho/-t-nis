@@ -5,14 +5,18 @@ import { Cards } from "../../components/Cards";
 import SetaD from "../../assets/caret-circle-right-thin.svg";
 import SetaE from "../../assets/caret-circle-left-thin.svg";
 import { useParams } from "react-router-dom";
-import CartContext from "../../context";
+import CartContext from "../../context/cartContext";
 
 export const Produtos = () => {
   const [item, setItem] = useState([]);
   const carousel = useRef(null);
   const { id } = useParams();
-  const [product, setProduct] = useState({});
+  const [product, setProduct] = useState(null);
   const { cart, setCart } = useContext(CartContext);
+  const [quant, setQuant] = useState(null);
+  const [selectedItems, setSelectedItems] = useState(
+    JSON.parse(localStorage.getItem("selectedItems")) || []
+  );
 
   useEffect(() => {
     const promise = axios.get("http://localhost:3000/products");
@@ -20,21 +24,22 @@ export const Produtos = () => {
       setItem(response.data);
     });
     promise.catch((e) => console.log("deu ruim! 😢", e));
-  }, []);
-  useEffect(() => {
-    console.log(cart);
   }, [cart]);
+  console.log(cart, "testeproduto");
+
+  useEffect(() => {
+    localStorage.setItem("selectedItems", JSON.stringify(selectedItems));
+  }, [selectedItems]);
 
   const handleLeftClick = (e) => {
     e.preventDefault();
-    console.log(carousel.current.offsetWidth);
     carousel.current.scrollLeft -= carousel.current.offsetWidth;
   };
   const handleRightClick = (e) => {
     e.preventDefault();
-    console.log(carousel.current.offsetWidth);
     carousel.current.scrollLeft += carousel.current.offsetWidth;
   };
+
   function addProduct(selectedProduct) {
     const updatedCart = [...cart];
     const existingItem = updatedCart.find(
@@ -42,33 +47,34 @@ export const Produtos = () => {
     );
 
     if (existingItem) {
-      // Se o produto já estiver no carrinho, atualize apenas a quantidade
       existingItem.quantidade += selectedProduct.quantidade || 1;
     } else {
-      // Caso contrário, adicione um novo item ao carrinho
-      updatedCart.push({ ...selectedProduct });
+      updatedCart.push({
+        ...selectedProduct,
+        quantidade: selectedProduct.quantidade || 1,
+      });
     }
 
     setCart(updatedCart);
-    console.log(cart);
+    setSelectedItems([...selectedItems, selectedProduct]);
   }
 
   return (
     <div>
       <div className={styles["carousel"]} ref={carousel}>
         <div className={styles["carousel-card"]}>
-          {item.map((item, index) => {
+          {item.map((procuct, index) => {
             const url = `/carrinho`;
             return (
               <Cards
                 key={index}
-                title={item.title}
-                description={item.description}
-                price={"R$" + item.price.toFixed(2)}
-                img={item.img}
+                title={procuct.title}
+                description={procuct.description}
+                price={"R$" + procuct.price.toFixed(2).replace(".", ",")}
+                img={procuct.img}
                 url={url}
                 btCart={true}
-                addProduct={() => addProduct(item)}
+                addProduct={() => addProduct(procuct)}
               />
             );
           })}

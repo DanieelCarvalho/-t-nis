@@ -52,6 +52,7 @@ export const Cards = ({
         <p>{title}</p>
         <p>{description}</p>
         <p>{price}</p>
+        <p>{quantidade}</p>
         {addCart}
         {buttons}
       </figure>
