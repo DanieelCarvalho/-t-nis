@@ -24,3 +24,15 @@ ul {
   justify-content: center;
   align-items: center;
 }
+.container-figure-img {
+  /* estilos para a imagem */
+}
+
+.container-figure-img:hover {
+  /* estilos para a imagem quandboro o mouse está sobre ela */
+  border: solid red;
+}
+.hovered {
+  /* estilos para a imagem quando o mouse está sobre ela */
+  border: solid red;
+}

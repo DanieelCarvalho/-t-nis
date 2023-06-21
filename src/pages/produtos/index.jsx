@@ -1,19 +1,13 @@
 import styles from "./style.module.css";
-import { useEffect, useState, useRef, useContext } from "react";
+import { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import { Cards } from "../../components/Cards";
 import SetaD from "../../assets/caret-circle-right-thin.svg";
 import SetaE from "../../assets/caret-circle-left-thin.svg";
-import { useParams } from "react-router-dom";
-import CartContext from "../../context/cartContext";
 
 export const Produtos = () => {
   const [item, setItem] = useState([]);
   const carousel = useRef(null);
-  const { id } = useParams();
-  const [product, setProduct] = useState(null);
-  const { cart, setCart } = useContext(CartContext);
-  const [quant, setQuant] = useState(null);
   const [selectedItems, setSelectedItems] = useState(
     JSON.parse(localStorage.getItem("selectedItems")) || []
   );
@@ -24,8 +18,7 @@ export const Produtos = () => {
       setItem(response.data);
     });
     promise.catch((e) => console.log("deu ruim! 😢", e));
-  }, [cart]);
-  console.log(cart, "testeproduto");
+  }, [selectedItems]);
 
   useEffect(() => {
     localStorage.setItem("selectedItems", JSON.stringify(selectedItems));
@@ -41,40 +34,43 @@ export const Produtos = () => {
   };
 
   function addProduct(selectedProduct) {
-    const updatedCart = [...cart];
-    const existingItem = updatedCart.find(
+    const updatedSelectedItems = [...selectedItems];
+    const existingItem = updatedSelectedItems.find(
       (item) => item.id === selectedProduct.id
     );
 
     if (existingItem) {
       existingItem.quantidade += selectedProduct.quantidade || 1;
     } else {
-      updatedCart.push({
+      updatedSelectedItems.push({
         ...selectedProduct,
         quantidade: selectedProduct.quantidade || 1,
       });
     }
 
-    setCart(updatedCart);
-    setSelectedItems([...selectedItems, selectedProduct]);
+    setSelectedItems(updatedSelectedItems);
+
+    // Salvar informações no localStorage
+    localStorage.setItem("selectedItems", JSON.stringify(updatedSelectedItems));
   }
 
   return (
     <div>
       <div className={styles["carousel"]} ref={carousel}>
         <div className={styles["carousel-card"]}>
-          {item.map((procuct, index) => {
+          {item.map((product, index) => {
             const url = `/carrinho`;
             return (
               <Cards
                 key={index}
-                title={procuct.title}
-                description={procuct.description}
-                price={"R$" + procuct.price.toFixed(2).replace(".", ",")}
-                img={procuct.img}
+                title={product.title}
+                description={product.description}
+                price={"R$" + product.price.toFixed(2).replace(".", ",")}
+                img={product.img}
+                img2={product.img2}
                 url={url}
                 btCart={true}
-                addProduct={() => addProduct(procuct)}
+                addProduct={() => addProduct(product)}
               />
             );
           })}

@@ -1,16 +1,11 @@
-import { useState } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Home } from "../pages/home";
 import { Produtos } from "../pages/produtos";
 import { RootLayout } from "../components/RootLayout";
 import { ErrorPage } from "../pages/ErrorPage";
 import { Cart } from "../pages/Cart";
-import CartContext from "../context/cartContext";
-import DadosContext from "../context/dadosContext";
 
 function App() {
-  const [cart, setCart] = useState([]);
-  const [dados, setDados] = useState({});
   const router = createBrowserRouter([
     {
       path: "/",
@@ -24,11 +19,9 @@ function App() {
     },
   ]);
   return (
-    <CartContext.Provider value={{ cart, setCart }}>
-      <DadosContext.Provider value={{ dados, setDados }}>
-        <RouterProvider router={router} />
-      </DadosContext.Provider>
-    </CartContext.Provider>
+    <div>
+      <RouterProvider router={router} />
+    </div>
   );
 }
 
