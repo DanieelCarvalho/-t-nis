@@ -10,11 +10,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Lora", serif;
+  font-family: "Lora", "Roboto";
 }
 body {
   width: 100%;
   min-height: 100vh;
-  background-color: #e1e1e1;
+  background-color: #131313;
   color: #1e1e1e;
+  background-image: url(./assets/nike-5126389_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }

@@ -1,14 +1,39 @@
+.container {
+  background-color: #131313;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.container h1 {
+  color: #fff;
+  font-family: "Roboto";
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 15vh;
+}
 .carousel {
   display: flex;
+  justify-content: ;
   width: 100%;
   overflow-x: auto;
   scroll-behavior: smooth;
   object-fit: cover;
+  background-color: #131313;
 }
 .carousel-card {
   text-align: center;
   display: flex;
   object-fit: cover;
+  color: #fff;
 }
 
 .carousel::-webkit-scrollbar {
@@ -23,7 +48,7 @@
 .buttons .button {
   display: flex;
   justify-content: space-evenly;
-  background-color: transparent;
+  background-color: black;
   border: none;
   cursor: pointer;
 }

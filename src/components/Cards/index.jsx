@@ -29,12 +29,10 @@ export const Cards = ({
 
   return (
     <section className={styles["container"]}>
-      <figure
-        className={styles["container-figure"]}
-        onMouseEnter={handleHover}
-        onMouseLeave={handleHover}
-      >
+      <figure className={styles["container-figure"]}>
         <img
+          onMouseEnter={handleHover}
+          onMouseLeave={handleHover}
           src={renderImage}
           alt="imagem do produto"
           className={styles["container-figure-img"]}
@@ -49,7 +47,7 @@ export const Cards = ({
               className={styles["button-cart"]}
               onClick={() => addProduct()}
             >
-              <img src={Carrinho} alt="" />
+              {/* <img src={Carrinho} alt="" /> */}
               Adicionar ao carrinho
             </button>
           </Link>

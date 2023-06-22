@@ -1,7 +1,19 @@
 .container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
   height: 8vh;
+  border-bottom: 1px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+.container nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 25px;
+  width: 40vw;
+  height: 5vh;
 }
 
 ul {
@@ -12,10 +24,15 @@ ul {
   height: 100%;
   list-style: none;
   text-decoration: none;
+  color: #fff;
+  border-radius: 25px;
 }
 .navLink {
   text-decoration: none;
-  color: black;
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 1.6rem;
+  font-weight: 500;
 }
 .container-figure {
   height: 100%;
@@ -25,14 +42,12 @@ ul {
   align-items: center;
 }
 .container-figure-img {
-  /* estilos para a imagem */
+  color: #fff;
 }
 
 .container-figure-img:hover {
   /* estilos para a imagem quandboro o mouse está sobre ela */
-  border: solid red;
 }
 .hovered {
   /* estilos para a imagem quando o mouse está sobre ela */
-  border: solid red;
 }

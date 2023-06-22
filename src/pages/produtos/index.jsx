@@ -2,8 +2,8 @@ import styles from "./style.module.css";
 import { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import { Cards } from "../../components/Cards";
-import SetaD from "../../assets/caret-circle-right-thin.svg";
-import SetaE from "../../assets/caret-circle-left-thin.svg";
+import SetaD from "../../assets/caret-right-thin.svg";
+import SetaE from "../../assets/caret-left-thin.svg";
 
 export const Produtos = () => {
   const [item, setItem] = useState([]);
@@ -11,7 +11,14 @@ export const Produtos = () => {
   const [selectedItems, setSelectedItems] = useState(
     JSON.parse(localStorage.getItem("selectedItems")) || []
   );
+  useEffect(() => {
+    document.body.style.backgroundImage = "none";
 
+    return () => {
+      // Restaurar a imagem de fundo original ao desmontar o componente
+      document.body.style.backgroundImage = "";
+    };
+  }, []);
   useEffect(() => {
     const promise = axios.get("http://localhost:3000/products");
     promise.then((response) => {
@@ -55,7 +62,8 @@ export const Produtos = () => {
   }
 
   return (
-    <div>
+    <div className={styles["container"]}>
+      <h1>nossos lançamentos</h1>
       <div className={styles["carousel"]} ref={carousel}>
         <div className={styles["carousel-card"]}>
           {item.map((product, index) => {

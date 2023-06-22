@@ -3,6 +3,26 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  height: 100%;
+}
+.container h1 {
+  color: #ffffff;
+  font-size: 1.6rem;
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto";
+  font-weight: 100;
+}
+.container h4 {
+  font-size: 5rem;
+  color: #ffffff;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto";
+  font-weight: 100;
 }
 .boxCarts {
   display: flex;
@@ -11,36 +31,46 @@
 }
 .box-product {
   display: flex;
-  width: 50vw;
+  width: 60vw;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: ;
   height: 20vh;
   border: none;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
-  margin-bottom: 8vh;
+  /* margin-bottom: 8vh; */
+  margin-top: 10px;
+  border: none;
+  background-color: #ffffff;
 }
 .box-product-img {
-  width: 12vw;
+  width: 17vw;
   object-fit: cover;
-  border-radius: 16px;
+  border-radius: 10px 0 0 10px;
+  border: solid 1px 0 0 0;
 }
 .box-product-title {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   height: 100%;
+  color: #080808;
+  margin-left: 10px;
 }
-.box-product-title h2 {
+.box-product-title p {
+}
+.box-product-title h3 {
   font-weight: 400;
-  width: 50vw;
+  width: 1005;
 }
 .box-buttons {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 15vw;
+  height: 100%;
+  color: #080808;
 }
 .box-button {
   display: flex;
@@ -48,7 +78,42 @@
   justify-content: center;
   border-radius: 16px;
   border: none;
-  color: white;
-  background-color: #f8a836;
+  color: #080808;
+
   cursor: pointer;
+}
+.box-button-trash {
+  border: none;
+  background-color: transparent;
+}
+.container-total {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 15vh;
+}
+.container-total h2 {
+  font-family: "Roboto";
+  font-weight: 100;
+}
+.container-total-buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-total-buttons button {
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 20vw;
+  height: 4vh;
+  cursor: pointer;
+  border: none;
+}
+.container-total-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
 }

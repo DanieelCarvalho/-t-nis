@@ -4,6 +4,7 @@ import { Produtos } from "../pages/produtos";
 import { RootLayout } from "../components/RootLayout";
 import { ErrorPage } from "../pages/ErrorPage";
 import { Cart } from "../pages/Cart";
+import styles from "./style.module.css";
 
 function App() {
   const router = createBrowserRouter([
@@ -19,7 +20,7 @@ function App() {
     },
   ]);
   return (
-    <div>
+    <div className={styles["container"]}>
       <RouterProvider router={router} />
     </div>
   );

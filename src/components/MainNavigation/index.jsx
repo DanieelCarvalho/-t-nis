@@ -1,20 +1,23 @@
 import { NavLink } from "react-router-dom";
 import styles from "./style.module.css";
-import Carrinho from "../../assets/shopping-cart-thin (1).svg";
+import Carrinho from "../../assets/shopping-cart-thin (3).svg";
 
 export const MainNavigation = () => {
   return (
     <header className={styles["container"]}>
+      <div>
+        <img src="X" alt="" />
+      </div>
       <nav>
         <ul>
           <li>
             <NavLink className={styles["navLink"]} to="/">
-              Home
+              Início
             </NavLink>
           </li>
           <li>
             <NavLink className={styles["navLink"]} to="produtos">
-              produtos
+              Tênis
             </NavLink>
           </li>
         </ul>
