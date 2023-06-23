@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  align-items: center;
+  height: 50vh;
+}
+.container h1 {
+  color: #fff;
+  font-family: "Roboto";
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.container-formulario {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.container-formulario p {
+  font-family: "Roboto";
+  color: #fff;
+  text-align: justify;
+  font-weight: 100;
+  width: 80%;
+  display: flex;
+}
+.container-formulario form {
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 50px;
+  width: 30vw;
+  height: 5vh;
+  color: #fff;
+  background-color: black;
+  border-radius: 50px;
+}
+.container-formulario label input {
+  width: 20vw;
+  height: 100%;
+  border: none;
+  border-radius: 50px 0 0 50px;
+  background-color: black;
+  color: #fff;
+  padding-left: 10px;
+}
+.container-formulario button {
+  background-color: black;
+  border: none;
+  cursor: pointer;
+}
+.container-formulario input::placeholder {
+  border: solid red;
+  border: none;
+  padding-left: 8px;
+}

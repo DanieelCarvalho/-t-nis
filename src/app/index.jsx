@@ -4,6 +4,7 @@ import { Produtos } from "../pages/produtos";
 import { RootLayout } from "../components/RootLayout";
 import { ErrorPage } from "../pages/ErrorPage";
 import { Cart } from "../pages/Cart";
+import { Contact } from "../pages/contact";
 import styles from "./style.module.css";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         { path: "/", element: <Home /> },
         { path: "produtos", element: <Produtos /> },
         { path: "carrinho", element: <Cart /> },
+        { path: "contato", element: <Contact /> },
       ],
     },
   ]);

@@ -5,8 +5,11 @@ import Carrinho from "../../assets/shopping-cart-thin (3).svg";
 export const MainNavigation = () => {
   return (
     <header className={styles["container"]}>
-      <div>
-        <img src="X" alt="" />
+      <div className={styles["container-title"]}>
+        {" "}
+        <NavLink className={styles["container-title-link"]} to="/">
+          <h1>T P</h1>
+        </NavLink>
       </div>
       <nav>
         <ul>
@@ -18,6 +21,11 @@ export const MainNavigation = () => {
           <li>
             <NavLink className={styles["navLink"]} to="produtos">
               Tênis
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className={styles["navLink"]} to="contato">
+              Contato
             </NavLink>
           </li>
         </ul>
