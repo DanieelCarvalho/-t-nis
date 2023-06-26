@@ -38,7 +38,7 @@
       "description": "Sistema De Amortecimento Em Gel®: Gel Com Base De Silicone, Colocado Em Locais Estratégicos Para Absorção De Impacto.Amplifoam: espuma De Baixa Densidade Para Um Suave Amortecimento.",
       "price": 299.99,
       "img": "https://imgcentauro-a.akamaihd.net/600x600/96405962/tenis-asics-gel-excite-8-masculino-img.jpg",
-      "img2": "https://www.centauro.com.br/tenis-asics-gel-excite-8-masculino-964059.html#cor=62&u_gclid=CjwKCAjwyqWkBhBMEiwAp2yUFhoh-6b-WOCPhZEZQ8Pkc3eSsNPYcIFzeoc6AvkkOncmZX7FNGx31hoCbPkQAvD_BwE"
+      "img2": "https://imgcentauro-a.akamaihd.net/500x500/96405962A1/tenis-asics-gel-excite-8-masculino-img.jpg"
     },
     {
       "id": 5,
@@ -67,14 +67,15 @@
       "title": "Tênis adidas Lite Racer 3.0 - Masculino",
       "description": "Saúde oral: auxilia a redução da formação do tártaro;",
       "price": 299.99,
-      "img": "https://imgcentauro-a.akamaihd.net/600x600/96943362/tenis-adidas-lite-racer-3-0-masculino-img.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/600x600/96943362/tenis-adidas-lite-racer-3-0-masculino-img.jpg",
+      "img2": "https://imgcentauro-a.akamaihd.net/500x500/96943362A1/tenis-adidas-lite-racer-3-0-masculino-img.jpg"
     },
     {
       "id": 8,
       "categoriesId": 1,
       "categories2": "Tênis",
       "title": "Tênis adidas Ultraboost 22 - Masculino",
-      "description": "Boost™: Energia Única De Cápsulas Que Apresentam Uma Mágica Combinação De Benefícios Funcionais, Como Maciez, Amortecimento Elástico E Sensação De Liberdade. Independente Da Temperatura, Ela Traz Mais Eficiência E Conforto Na Sua Corrida.",
+      "description": "Boost™: Energia Única De Cápsulas Que Apresentam Uma Mágica Combinação De Benefícios Funcionais, Como Maciez, Amortecimento Elástico E Sensação De Liberdade.",
       "price": 749.99,
       "img": "https://imgcentauro-a.akamaihd.net/900x900/973921Y3/tenis-adidas-ultraboost-22-masculino-img.jpg",
       "img2": "https://imgcentauro-a.akamaihd.net/600x600/973921Y3A1/tenis-adidas-ultraboost-22-masculino-img.jpg"
@@ -104,7 +105,7 @@
       "categoriesId": 2,
       "categories2": "Tênis feminino",
       "title": "Tênis Nike Revolution 6 - Feminino",
-      "description": " o Tênis Nike Revolution 6 possui cabedal (parte superior do calçado) leve e respirável em mesh (malha de tramas abertas), a maciez e suavidade de uma entressola em espuma que garante uma pisada mais flexível e amortecida, além de solado emborrachado para aderência e durabilidade.",
+      "description": " o Tênis Nike Revolution 6 possui cabedal (parte superior do calçado) leve e respirável em mesh (malha de tramas abertas), a maciez e suavidade de uma entressola em espuma que garante uma pisada mais flexível e amortecida.",
       "price": 309.99,
       "img": "https://imgcentauro-a.akamaihd.net/900x900/968315JU/tenis-nike-revolution-6-feminino-img.jpg",
       "img2": "https://imgcentauro-a.akamaihd.net/600x600/968315JUA1/tenis-nike-revolution-6-feminino-img.jpg"
@@ -114,7 +115,7 @@
       "categoriesId": 2,
       "categories2": "Tênis feminino",
       "title": "Tênis adidas Grand Court 2.0 - Feminino",
-      "description": "#",
+      "description": "Perfeito para o dia a dia, esse tênis Adidas apresenta amortecimento e estabilidade durante as passadas. O cabedal macio e confortável garante respirabilidade, enquanto o solado emborrachado fornece aderência. Adquira já esse tênis Adidas feminino!",
       "price": 320,
       "img": "https://imgcentauro-a.akamaihd.net/600x600/973606C4/tenis-adidas-grand-court-2-0-feminino-img.jpg",
       "img2": "https://imgcentauro-a.akamaihd.net/600x600/973606C4A1/tenis-adidas-grand-court-2-0-feminino-img.jpg"
@@ -124,7 +125,7 @@
       "categoriesId": 2,
       "categories2": "Tênis feminino",
       "title": "Tênis Mizuno Cool Ride - Feminino",
-      "description": "O seu cabedal (parte superior do calçado) tem material em mesh (malhas de tramas abertas) garantindo muito mais respirabilidade, a entressola é em EVA e seu solado é emborrachado. A sua lingueta é integrada, a palmilha é removível e macia, além de seu forro ter reforço acolchoado.",
+      "description": "O seu cabedal (parte superior do calçado) tem material em mesh (malhas de tramas abertas) garantindo muito mais respirabilidade, a entressola é em EVA e seu solado é emborrachado.",
       "price": 309.99,
       "img": "https://imgcentauro-a.akamaihd.net/900x900/97009005/tenis-mizuno-cool-ride-feminino-img.jpg",
       "img2": "https://imgcentauro-a.akamaihd.net/600x600/97009005A1/tenis-mizuno-cool-ride-feminino-img.jpg"

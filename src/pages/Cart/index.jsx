@@ -6,11 +6,25 @@ import Mais from "../../assets/plus-thin (1).svg";
 import Lixeira from "../../assets/trash-thin.svg";
 import Foto from "../../assets/sports.png";
 import SetaE from "../../assets/caret-left-thin.svg";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const Cart = () => {
   const [quant, setQuant] = useState(0);
   const [total, setTotal] = useState(null);
   const [cartItems, setCartItems] = useState([]);
+  const notify = () => {
+    toast.success("enviado com sucesso!", {
+      position: "top-center",
+      autoClose: 200,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    });
+  };
 
   useEffect(() => {
     const total = cartItems.reduce((acc, curr) => {
